@@ -1,0 +1,10 @@
+C:\Users\Mashayeakh\source\repos\FinalProject\BEL\bin\Debug\BEL.dll
+C:\Users\Mashayeakh\source\repos\FinalProject\BEL\bin\Debug\BEL.pdb
+C:\Users\Mashayeakh\source\repos\FinalProject\BEL\obj\Debug\BEL.csproj.CoreCompileInputs.cache
+C:\Users\Mashayeakh\source\repos\FinalProject\BEL\obj\Debug\BEL.dll
+C:\Users\Mashayeakh\source\repos\FinalProject\BEL\obj\Debug\BEL.pdb
+C:\Users\Mashayeakh\source\repos\FinalProject\BEL\obj\Debug\BEL.csproj.AssemblyReference.cache
+C:\Users\Mashayeakh\source\repos\FinalProject\BEL\bin\Debug\BEL.dll.config
+C:\Users\Mashayeakh\source\repos\FinalProject\BEL\bin\Debug\EntityFramework.dll
+C:\Users\Mashayeakh\source\repos\FinalProject\BEL\bin\Debug\EntityFramework.xml
+C:\Users\Mashayeakh\source\repos\FinalProject\BEL\obj\Debug\BEL.csproj.CopyComplete

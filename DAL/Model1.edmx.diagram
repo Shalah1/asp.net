@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fbb44d9039174182b17fe7e7b896b704" Name="Diagram1" ZoomLevel="117">
+        <EntityTypeShape EntityType="finalproModel.Bonu" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="finalproModel.Cart" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="finalproModel.Category" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="finalproModel.Customer" Width="1.5" PointX="3" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="finalproModel.Deliveryman" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="finalproModel.Employee" Width="1.5" PointX="3.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="finalproModel.Manager" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="finalproModel.Order" Width="1.5" PointX="6" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="finalproModel.OrderDetail" Width="1.5" PointX="8.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="finalproModel.PCondition" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="finalproModel.PReview" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="finalproModel.Product" Width="1.5" PointX="3" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="finalproModel.Shop" Width="1.5" PointX="10.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="finalproModel.Voucher" Width="1.5" PointX="0.75" PointY="13" IsExpanded="true" />
+        <AssociationConnector Association="finalproModel.CustomerCart" ManuallyRouted="false" />
+        <AssociationConnector Association="finalproModel.ProductInCart" ManuallyRouted="false" />
+        <AssociationConnector Association="finalproModel.ProductToCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="finalproModel.CustomToVoucher" ManuallyRouted="false" />
+        <AssociationConnector Association="finalproModel.OrderDetailsOfCustomer" ManuallyRouted="false" />
+        <AssociationConnector Association="finalproModel.OrderedByCustomer" ManuallyRouted="false" />
+        <AssociationConnector Association="finalproModel.OrderConfirmedByEmp" ManuallyRouted="false" />
+        <AssociationConnector Association="finalproModel.ProductAddedByManager" ManuallyRouted="false" />
+        <AssociationConnector Association="finalproModel.OrderToOrderDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="finalproModel.OrderDetProduct" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

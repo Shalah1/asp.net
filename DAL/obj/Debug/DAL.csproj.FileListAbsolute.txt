@@ -1,0 +1,13 @@
+C:\Users\Mashayeakh\source\repos\FinalProject\DAL\bin\Debug\DAL.dll.config
+C:\Users\Mashayeakh\source\repos\FinalProject\DAL\bin\Debug\DAL.dll
+C:\Users\Mashayeakh\source\repos\FinalProject\DAL\bin\Debug\DAL.pdb
+C:\Users\Mashayeakh\source\repos\FinalProject\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Mashayeakh\source\repos\FinalProject\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Mashayeakh\source\repos\FinalProject\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Mashayeakh\source\repos\FinalProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Mashayeakh\source\repos\FinalProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Mashayeakh\source\repos\FinalProject\DAL\obj\Debug\DAL.dll
+C:\Users\Mashayeakh\source\repos\FinalProject\DAL\obj\Debug\DAL.pdb
+C:\Users\Mashayeakh\source\repos\FinalProject\DAL\bin\Debug\BEL.dll
+C:\Users\Mashayeakh\source\repos\FinalProject\DAL\bin\Debug\BEL.pdb
+C:\Users\Mashayeakh\source\repos\FinalProject\DAL\bin\Debug\BEL.dll.config

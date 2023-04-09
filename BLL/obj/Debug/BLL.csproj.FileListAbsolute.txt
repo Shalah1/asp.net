@@ -1,0 +1,17 @@
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\bin\Debug\BLL.dll
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\bin\Debug\BLL.pdb
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\bin\Debug\AutoMapper.dll
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\bin\Debug\DAL.dll
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\bin\Debug\DAL.pdb
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\bin\Debug\DAL.dll.config
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\bin\Debug\AutoMapper.xml
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\obj\Debug\BLL.dll
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\obj\Debug\BLL.pdb
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\bin\Debug\BEL.dll
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\bin\Debug\BEL.pdb
+C:\Users\Mashayeakh\source\repos\FinalProject\BLL\bin\Debug\BEL.dll.config

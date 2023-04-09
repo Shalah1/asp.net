@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="finalproModelStoreContainer" CdmEntityContainer="finalproEntities1">
+    <EntitySetMapping Name="Bonus">
+      <EntityTypeMapping TypeName="finalproModel.Bonu">
+        <MappingFragment StoreEntitySet="Bonus">
+          <ScalarProperty Name="BonusId" ColumnName="BonusId" />
+          <ScalarProperty Name="BonusType" ColumnName="BonusType" />
+          <ScalarProperty Name="BonusAmount" ColumnName="BonusAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carts">
+      <EntityTypeMapping TypeName="finalproModel.Cart">
+        <MappingFragment StoreEntitySet="Cart">
+          <ScalarProperty Name="CartId" ColumnName="CartId" />
+          <ScalarProperty Name="CId" ColumnName="CId" />
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="PQuantity" ColumnName="PQuantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="finalproModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="finalproModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="CId" ColumnName="CId" />
+          <ScalarProperty Name="CName" ColumnName="CName" />
+          <ScalarProperty Name="CPassword" ColumnName="CPassword" />
+          <ScalarProperty Name="CEmail" ColumnName="CEmail" />
+          <ScalarProperty Name="CAddress" ColumnName="CAddress" />
+          <ScalarProperty Name="CPhone" ColumnName="CPhone" />
+          <ScalarProperty Name="CPicture" ColumnName="CPicture" />
+          <ScalarProperty Name="VouId" ColumnName="VouId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Deliverymen">
+      <EntityTypeMapping TypeName="finalproModel.Deliveryman">
+        <MappingFragment StoreEntitySet="Deliveryman">
+          <ScalarProperty Name="DId" ColumnName="DId" />
+          <ScalarProperty Name="DName" ColumnName="DName" />
+          <ScalarProperty Name="DEmail" ColumnName="DEmail" />
+          <ScalarProperty Name="DPassword" ColumnName="DPassword" />
+          <ScalarProperty Name="DPhone" ColumnName="DPhone" />
+          <ScalarProperty Name="DStatus" ColumnName="DStatus" />
+          <ScalarProperty Name="DOrderid" ColumnName="DOrderid" />
+          <ScalarProperty Name="DSalary" ColumnName="DSalary" />
+          <ScalarProperty Name="DSchedule" ColumnName="DSchedule" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="finalproModel.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EId" ColumnName="EId" />
+          <ScalarProperty Name="EName" ColumnName="EName" />
+          <ScalarProperty Name="EPassword" ColumnName="EPassword" />
+          <ScalarProperty Name="EEmail" ColumnName="EEmail" />
+          <ScalarProperty Name="EAddress" ColumnName="EAddress" />
+          <ScalarProperty Name="EPhone" ColumnName="EPhone" />
+          <ScalarProperty Name="EPicture" ColumnName="EPicture" />
+          <ScalarProperty Name="EBasicSalary" ColumnName="EBasicSalary" />
+          <ScalarProperty Name="EFastiveBonus" ColumnName="EFastiveBonus" />
+          <ScalarProperty Name="EPerformBonus" ColumnName="EPerformBonus" />
+          <ScalarProperty Name="ESchedule" ColumnName="ESchedule" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Managers">
+      <EntityTypeMapping TypeName="finalproModel.Manager">
+        <MappingFragment StoreEntitySet="Manager">
+          <ScalarProperty Name="MId" ColumnName="MId" />
+          <ScalarProperty Name="MName" ColumnName="MName" />
+          <ScalarProperty Name="MPassword" ColumnName="MPassword" />
+          <ScalarProperty Name="MEmail" ColumnName="MEmail" />
+          <ScalarProperty Name="MAddress" ColumnName="MAddress" />
+          <ScalarProperty Name="MPhone" ColumnName="MPhone" />
+          <ScalarProperty Name="MPicture" ColumnName="MPicture" />
+          <ScalarProperty Name="MBasicSalary" ColumnName="MBasicSalary" />
+          <ScalarProperty Name="MFastiveBonus" ColumnName="MFastiveBonus" />
+          <ScalarProperty Name="MPerformBonus" ColumnName="MPerformBonus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="finalproModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="OId" ColumnName="OId" />
+          <ScalarProperty Name="CId" ColumnName="CId" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="OrderTotalCost" ColumnName="OrderTotalCost" />
+          <ScalarProperty Name="OrderPayMethod" ColumnName="OrderPayMethod" />
+          <ScalarProperty Name="EId" ColumnName="EId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDetails">
+      <EntityTypeMapping TypeName="finalproModel.OrderDetail">
+        <MappingFragment StoreEntitySet="OrderDetails">
+          <ScalarProperty Name="OrderDetailsId" ColumnName="OrderDetailsId" />
+          <ScalarProperty Name="CId" ColumnName="CId" />
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="OId" ColumnName="OId" />
+          <ScalarProperty Name="PQuantity" ColumnName="PQuantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PConditions">
+      <EntityTypeMapping TypeName="finalproModel.PCondition">
+        <MappingFragment StoreEntitySet="PCondition">
+          <ScalarProperty Name="PCId" ColumnName="PCId" />
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="PCondition1" ColumnName="PCondition" />
+          <ScalarProperty Name="PStock" ColumnName="PStock" />
+          <ScalarProperty Name="PSoldquantity" ColumnName="PSoldquantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PReviews">
+      <EntityTypeMapping TypeName="finalproModel.PReview">
+        <MappingFragment StoreEntitySet="PReviews">
+          <ScalarProperty Name="PRId" ColumnName="PRId" />
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="PReviews" ColumnName="PReviews" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="finalproModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="PId" ColumnName="PId" />
+          <ScalarProperty Name="PName" ColumnName="PName" />
+          <ScalarProperty Name="PBasicPrice" ColumnName="PBasicPrice" />
+          <ScalarProperty Name="PCategoryId" ColumnName="PCategoryId" />
+          <ScalarProperty Name="PStock" ColumnName="PStock" />
+          <ScalarProperty Name="PDiscount" ColumnName="PDiscount" />
+          <ScalarProperty Name="PDescription" ColumnName="PDescription" />
+          <ScalarProperty Name="PPicture" ColumnName="PPicture" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="Review" ColumnName="Review" />
+          <ScalarProperty Name="PShopId" ColumnName="PShopId" />
+          <ScalarProperty Name="MId" ColumnName="MId" />
+          <ScalarProperty Name="PSoldQuantity" ColumnName="PSoldQuantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shops">
+      <EntityTypeMapping TypeName="finalproModel.Shop">
+        <MappingFragment StoreEntitySet="Shop">
+          <ScalarProperty Name="ShopId" ColumnName="ShopId" />
+          <ScalarProperty Name="ShopName" ColumnName="ShopName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vouchers">
+      <EntityTypeMapping TypeName="finalproModel.Voucher">
+        <MappingFragment StoreEntitySet="Voucher">
+          <ScalarProperty Name="VouId" ColumnName="VouId" />
+          <ScalarProperty Name="VouCode" ColumnName="VouCode" />
+          <ScalarProperty Name="VouDiscount" ColumnName="VouDiscount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="finalproModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Bonus">
+    <Key>
+      <PropertyRef Name="BonusId" />
+    </Key>
+    <Property Name="BonusId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BonusType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BonusAmount" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cart">
+    <Key>
+      <PropertyRef Name="CartId" />
+    </Key>
+    <Property Name="CartId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CId" Type="int" Nullable="false" />
+    <Property Name="PId" Type="int" Nullable="false" />
+    <Property Name="PQuantity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryId" />
+    </Key>
+    <Property Name="CategoryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CategoryName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CId" />
+    </Key>
+    <Property Name="CId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CPassword" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CEmail" Type="varchar" MaxLength="50" />
+    <Property Name="CAddress" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CPhone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CPicture" Type="image" />
+    <Property Name="VouId" Type="int" />
+  </EntityType>
+  <EntityType Name="Deliveryman">
+    <Key>
+      <PropertyRef Name="DId" />
+    </Key>
+    <Property Name="DId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DName" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="DEmail" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DPassword" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="DPhone" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DStatus" Type="nchar" MaxLength="10" />
+    <Property Name="DOrderid" Type="int" />
+    <Property Name="DSalary" Type="int" />
+    <Property Name="DSchedule" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="EId" />
+    </Key>
+    <Property Name="EId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EPassword" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EEmail" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EAddress" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EPhone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EPicture" Type="image" />
+    <Property Name="EBasicSalary" Type="int" Nullable="false" />
+    <Property Name="EFastiveBonus" Type="int" Nullable="false" />
+    <Property Name="EPerformBonus" Type="int" Nullable="false" />
+    <Property Name="ESchedule" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Manager">
+    <Key>
+      <PropertyRef Name="MId" />
+    </Key>
+    <Property Name="MId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MPassword" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MEmail" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MAddress" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MPhone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MPicture" Type="image" />
+    <Property Name="MBasicSalary" Type="int" Nullable="false" />
+    <Property Name="MFastiveBonus" Type="int" Nullable="false" />
+    <Property Name="MPerformBonus" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OId" />
+    </Key>
+    <Property Name="OId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CId" Type="int" Nullable="false" />
+    <Property Name="OrderStatus" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="OrderDate" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="OrderTotalCost" Type="int" Nullable="false" />
+    <Property Name="OrderPayMethod" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EId" Type="int" />
+  </EntityType>
+  <EntityType Name="OrderDetails">
+    <Key>
+      <PropertyRef Name="OrderDetailsId" />
+    </Key>
+    <Property Name="OrderDetailsId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CId" Type="int" Nullable="false" />
+    <Property Name="PId" Type="int" Nullable="false" />
+    <Property Name="OId" Type="int" Nullable="false" />
+    <Property Name="PQuantity" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PCondition">
+    <Key>
+      <PropertyRef Name="PCId" />
+    </Key>
+    <Property Name="PCId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PId" Type="int" Nullable="false" />
+    <Property Name="PCondition" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="PStock" Type="int" />
+    <Property Name="PSoldquantity" Type="int" />
+  </EntityType>
+  <EntityType Name="PReviews">
+    <Key>
+      <PropertyRef Name="PRId" />
+    </Key>
+    <Property Name="PRId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PId" Type="int" Nullable="false" />
+    <Property Name="PReviews" Type="nvarchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="PId" />
+    </Key>
+    <Property Name="PId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PBasicPrice" Type="int" Nullable="false" />
+    <Property Name="PCategoryId" Type="int" Nullable="false" />
+    <Property Name="PStock" Type="int" Nullable="false" />
+    <Property Name="PDiscount" Type="int" Nullable="false" />
+    <Property Name="PDescription" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PPicture" Type="image" />
+    <Property Name="Rating" Type="int" />
+    <Property Name="Review" Type="varchar" MaxLength="50" />
+    <Property Name="PShopId" Type="int" Nullable="false" />
+    <Property Name="MId" Type="int" />
+    <Property Name="PSoldQuantity" Type="int" />
+  </EntityType>
+  <EntityType Name="Shop">
+    <Key>
+      <PropertyRef Name="ShopId" />
+    </Key>
+    <Property Name="ShopId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ShopName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Voucher">
+    <Key>
+      <PropertyRef Name="VouId" />
+    </Key>
+    <Property Name="VouId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VouCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="VouDiscount" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="CustomerCart">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CId" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="CId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CustomToVoucher">
+    <End Role="Voucher" Type="Self.Voucher" Multiplicity="0..1" />
+    <End Role="Customer" Type="Self.Customer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Voucher">
+        <PropertyRef Name="VouId" />
+      </Principal>
+      <Dependent Role="Customer">
+        <PropertyRef Name="VouId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderConfirmedByEmp">
+    <End Role="Employee" Type="Self.Employee" Multiplicity="0..1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="EId" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="EId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderDetailsOfCustomer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="OrderDetails" Type="Self.OrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CId" />
+      </Principal>
+      <Dependent Role="OrderDetails">
+        <PropertyRef Name="CId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderDetProduct">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="OrderDetails" Type="Self.OrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="PId" />
+      </Principal>
+      <Dependent Role="OrderDetails">
+        <PropertyRef Name="PId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderedByCustomer">
+    <End Role="Customer" Type="Self.Customer" Multiplicity="1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="CId" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="CId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderToOrderDetails">
+    <End Role="Order" Type="Self.Order" Multiplicity="1" />
+    <End Role="OrderDetails" Type="Self.OrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OId" />
+      </Principal>
+      <Dependent Role="OrderDetails">
+        <PropertyRef Name="OId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProductAddedByManager">
+    <End Role="Manager" Type="Self.Manager" Multiplicity="0..1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Manager">
+        <PropertyRef Name="MId" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="MId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProductInCart">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="PId" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="PId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ProductToCategory">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryId" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="PCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="finalproModelStoreContainer">
+    <EntitySet Name="Bonus" EntityType="Self.Bonus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cart" EntityType="Self.Cart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customer" EntityType="Self.Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Deliveryman" EntityType="Self.Deliveryman" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Manager" EntityType="Self.Manager" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderDetails" EntityType="Self.OrderDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PCondition" EntityType="Self.PCondition" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PReviews" EntityType="Self.PReviews" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Shop" EntityType="Self.Shop" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Voucher" EntityType="Self.Voucher" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="CustomerCart" Association="Self.CustomerCart">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Cart" EntitySet="Cart" />
+    </AssociationSet>
+    <AssociationSet Name="CustomToVoucher" Association="Self.CustomToVoucher">
+      <End Role="Voucher" EntitySet="Voucher" />
+      <End Role="Customer" EntitySet="Customer" />
+    </AssociationSet>
+    <AssociationSet Name="OrderConfirmedByEmp" Association="Self.OrderConfirmedByEmp">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="OrderDetailsOfCustomer" Association="Self.OrderDetailsOfCustomer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="OrderDetails" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="OrderDetProduct" Association="Self.OrderDetProduct">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="OrderDetails" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="OrderedByCustomer" Association="Self.OrderedByCustomer">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="OrderToOrderDetails" Association="Self.OrderToOrderDetails">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="OrderDetails" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="ProductAddedByManager" Association="Self.ProductAddedByManager">
+      <End Role="Manager" EntitySet="Manager" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+    <AssociationSet Name="ProductInCart" Association="Self.ProductInCart">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="Cart" EntitySet="Cart" />
+    </AssociationSet>
+    <AssociationSet Name="ProductToCategory" Association="Self.ProductToCategory">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
